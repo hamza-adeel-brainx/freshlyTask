@@ -1,0 +1,151 @@
+{
+  "meals": [
+    {
+      "title": "Pork Chile Colorado",
+      "Image": "http://127.0.0.1:5500/images/Pork%20Chile%20Colorado.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Cauliflower Shell Beef ",
+      "Image": "/images/Cauliflower Shell Beef Bolognese.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Chicken & Pumpkin Parmesan",
+      "Image": "/images/Chicken & Pumpkin Parmesan Risotto.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Chicken Cordon Bleu",
+      "Image": "/images/Chicken Cordon Bleu.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Chipotle Chicken Bowl",
+      "Image": "/images/Chipotle Chicken Bowl.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Homestyle Chicken",
+      "Image": "/images/Homestyle Chicken.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Keto-Friendly Chicken Bowl",
+      "Image": "/images/Keto-Friendly Chicken Bowl.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Miso-Glazed Beef Bowl",
+      "Image": "/images/Miso-Glazed Beef Bowl.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Protein-Packed Chicken Parm",
+      "Image": "/images/Protein-Packed Chicken Parm.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    },
+    {
+      "title": "Slow-Cooked Red Wine Beef",
+      "Image": "/images/Slow-Cooked Red Wine Beef Brisket.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "true"
+    }
+    ,
+    {
+      "title": "Super-Grain Pulled Pork Bowl",
+      "Image": "/images/Super-Grain Pulled Pork Bowl.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "true"
+    }
+    ,
+    {
+      "title": "Supper Club Top Blade Steak",
+      "Image": "/images/Supper Club Top Blade Steak.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    }
+    ,
+    {
+      "title": "Cauliflower Shell Beef Bolognese",
+      "Image": "/images/Cauliflower Shell Beef Bolognese.jpg",
+      "Price": "2",
+      "flavour": "with Masterful Mac & Cheese",
+      "gluten": "Free",
+      "cals": "560",
+      "carbs": "35g",
+      "protein": "46g",
+      "special": "false"
+    }
+ 
+  ]
+}
