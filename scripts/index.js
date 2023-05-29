@@ -164,7 +164,15 @@ function addToCart(e) {
     }
     cartArray.push(cartItemObj);
   }
-  calculatePriceUpdatePlan("plus", price);
+  calculateprice("plus", price);
+}
+
+ const cartIcon=document.querySelector(".cart-icon");
+ cartIcon.addEventListener("click",cartDrawer);
+
+function cartDrawer(){
+const cart=document.querySelector(".cart")
+cart.classList.toggle("open-drawer");
 }
 
 function addItem(e) {
@@ -187,7 +195,7 @@ function addItem(e) {
     clonedContent.querySelector(".cart-item").classList.add("premium-color");
   }
   cart.appendChild(clonedContent);
-  calculatePriceUpdatePlan("plus", price);
+  calculateprice("plus", price);
   renderCartArray(1, carItem);
 }
 
@@ -197,7 +205,7 @@ function removeItem(e) {
   currentElement.parentElement.removeChild(currentElement);
   const carItem = e.target.parentElement;
   renderCartArray(0, carItem);
-  calculatePriceUpdatePlan("subtract", price);
+  calculateprice("subtract", price);
 }
 
 function renderCartArray(num, Item) {
@@ -232,14 +240,19 @@ function updatePlan() {
   const cartBtn = document.querySelector(".btn-cart-next-steps");
   if (count == 0) {
     addItemsText.textContent = "Proceed to checkout";
+    addItemsText.classList.remove("text-danger")
+    addItemsText.classList.add("text-success")
     stepCustomise.setAttribute("data-step-action", "next");
     cartBtn.removeAttribute("disabled");
   } else if (count > 0) {
     addItemsText.innerHTML = `Add ${count} items to cart to proceed`;
+    addItemsText.classList.remove("text-success")
+    addItemsText.classList.add("text-danger")
     stepCustomise.setAttribute("data-step-action", "");
     cartBtn.setAttribute("disabled", "disabled");
   } else if (count < 0) {
-
+    addItemsText.classList.remove("text-success")
+    addItemsText.classList.add("text-danger")
     addItemsText.innerHTML = `remove ${Math.abs(count)} items from cart to proceed`;
     stepCustomise.setAttribute("data-step-action", "");
     cartBtn.setAttribute("disabled", "disabled");
@@ -248,18 +261,17 @@ function updatePlan() {
 
 function mealInCart() {
   const cartItemsCount = document.querySelector(".cart");
-  return cartItemsCount.childElementCount - 1;
+  return cartItemsCount.childElementCount - 2;
 }
 
 
-function calculatePriceUpdatePlan(type, price) {
+function calculateprice(type, price) {
   if (type == "plus") {
     totalPrice = totalPrice + Number(price);
 
   } else if (type == "subtract") {
     totalPrice = totalPrice - Number(price);
     const template = document.querySelector('.cart template');
-
   }
 
   const noOfMeals = document.querySelector(".no-of-meals");
@@ -291,8 +303,8 @@ function promoAdd() {
   const templateContent = template.content;
   const clonedContent = templateContent.cloneNode(true);
   promoContainer.appendChild(clonedContent);
-
 }
+
 const deliveryDateSelect = document.querySelector(".delivery-date-dropdown");
 
 dates.forEach(date => {
@@ -328,7 +340,6 @@ deliveryDateSelect.addEventListener('change', function () {
     if (itemDate == datasetDate) {
       item.classList.add("active");
     }
-
   }
 });
 

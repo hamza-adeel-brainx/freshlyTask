@@ -19,6 +19,64 @@
     max-width: 34%;
     object-fit: cover;
   }
+
+}
+@media screen and (max-width: 768px) {
+  /* .total-cart{
+    height:300px !important;
+  } */
+.cart{
+  position: absolute;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    /* bottom: 33vh; */
+    height: 300px;
+    /* max-height: 300px; */
+    /* min-height: 300px; */
+    overflow: scroll;
+    transform: translateY(calc(-100% - 407px));
+    z-index: 99;
+    padding: 0 0 40px 0px;
+    
+}
+.add-meals-page{
+  position: relative;
+}
+.order-summary {
+  position: fixed;
+  left:0px;
+  
+}
+}
+@media screen and (max-width: 991px) {
+  /* .total-cart{
+    height:300px !important;
+  } */
+  .add-meals-page{
+    position: relative;
+  }
+  
+.cart{
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  /* bottom: 33vh; */
+  height: 300px;
+  /* max-height: 300px; */
+  /* min-height: 300px; */
+  overflow: scroll;
+  transform: translateY(calc(-100% - 407px));
+  z-index: 99;
+  padding: 0 0 40px 0px;
+}
+.order-summary {
+  position: fixed;
+  left:0px;
+}
 }
 
 :root {
@@ -232,7 +290,7 @@ delivery-date-meal-page .main-container {
 }
 .cart {
   overflow-y: auto;
-  height: calc(100% - 345px);
+  height: calc(100% - 45px);
 }
 
 .btn-cart-next-steps {
@@ -246,7 +304,6 @@ delivery-date-meal-page .main-container {
 
 .order-summary {
   position: absolute;
-  position: absolute;
   width: 100%;
   padding: 23px 15px 0;
   border-radius: 40px 40px 0 0;
@@ -257,12 +314,19 @@ delivery-date-meal-page .main-container {
     0 8px 16px 6px rgba(0, 0, 0, 0.1);
 }
 
+.cart-icon{
+  color: #28522f;
+  padding: 6px 22px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: -11px;
+}
 .order-summary-display {
   display: block;
 }
 .total-cart {
   position: relative;
-  height: calc(100vh - 104px);
+  height: calc(100vh - 45px);
 }
 .address-page {
   padding: 20px;
@@ -313,4 +377,37 @@ delivery-date-meal-page .main-container {
 .btn:disabled,
 fieldset:disabled .btn {
   color: var(--white);
+}
+i.fa.fa-shopping-cart.cart-icon.pt-1 {
+  padding: 6px 22px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: -11px;
+}
+@media screen and (max-width:991px) {
+  .total-cart{
+    height: fit-content;
+  }
+  .cart{
+    height: 271px !important;
+    transform: translateY(calc(-100% + 407px));
+    /* display: none; */
+    height:0;
+    z-index: 2;
+    transition: all ease-in 0.4s;
+  }
+  .temp{
+    padding-bottom: 300px;
+  }
+  .order-summary{
+    z-index: 3;
+  }
+  .cart.open-drawer {
+    
+      transform: translate(-30px , calc(-100% - 305px));
+      display: block;
+      padding: 20px;
+      width: 100vw;
+  
+}
 }

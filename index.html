@@ -6,7 +6,7 @@
     <title>Freshly</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.1/dist/jquery-steps.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/step-style.css">
@@ -190,7 +190,7 @@
         </section>
         <section class="meals-section step-tab-panel main-container" id="meals" data-step="meals-step">
           <div class="container-fluid">
-         <div class="row">
+         <div class="row add-meals-page">
           <div class="col-12 col-md-12 col-lg-7 col-xl-8 col-xxl-9 ">
             <div class="row temp">
               <template>
@@ -205,7 +205,7 @@
                       <p class="flavour">
                         with Masterful Mac & Cheese
                       </p>
-                      <div class="d-flex justify-content-center align-items-center">
+                      <div class="d-flex justify-content-center justify-content-md-start justify-content-sm-start   align-items-center">
                         <div class=" border-ingridients">
                         Gluten 
                         <span class="gluten"></span> 
@@ -233,12 +233,14 @@
             </div>
           </div>
           <div class="col-12 col-md-12 col-lg-5 col-xl-4 col-xxl-3 ">
-            <div class="d-flex pt-3">
-            <p  class="delivery-date-meal-page"> </p>
-            <a  class="clear-items ms-3"> Clear all</a>
-          </div>
+            
           <div class="total-cart">
+
           <div class="cart">
+            <div class="d-flex pt-3">
+              <p  class="delivery-date-meal-page"> </p>
+              <a  class="clear-items ms-3"> Clear all</a>
+            </div>
           <template>
             <div class="cart-item d-flex align-items-center mt-3" dataset-price="">
               <img class="cart-img p-2" src="" alt="food">
@@ -248,11 +250,12 @@
             </div>
           </template>  
         </div>
-          <div class="order-summary bg-white">
+          <div class="order-summary bg-white psotion-fixed position-sm-fixed position-md-absolute  position-xl-absolute position-xxl-absolute  ">
             <div class="wrapper-padding">
-          <h4>
-            Order Summary
-          </h4>
+          <div class="d-flex justify-content-between align-items-start pe-3">
+            <h4>Order Summary</h4>
+            <i class=" fa fa-shopping-cart fa-bounce cart-icon pt-1 " style="color: #28522f;"></i>
+          </div>
           
           <div class=" container-fluid justify-content-between d-flex ">
           <p class="no-of-meals"></p>
@@ -281,7 +284,7 @@
          <div class="container ">
           <div class="row">
             <div class="col-lg-6 order-lg-1 order-sm-2 order-2">
-              <h4 class="">Checkout</h4>
+              <h4 class="mt-5 mt-lg-0">Checkout</h4>
               <form class="row g-3 p-0 m-0" id="myForm">
                 <h4>Delivery Address</h4>
                 <div class="col-md-6">
