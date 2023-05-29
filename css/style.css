@@ -147,7 +147,7 @@ li.header-list.text-center {
 }
 
 .accordion-button::after {
-  background-image: url(/images/download.svg);
+  background-image: url(./images/download.svg);
 }
 
 .most-popular {

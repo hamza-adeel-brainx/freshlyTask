@@ -62,7 +62,7 @@ for (let i = 0; i < dates.length; i++) {
     const MostPopular = document.createElement("p");
     listitem.appendChild(MostPopular);
     MostPopular.classList.add("most-popular");
-    MostPopular.innerHTML = `<img src="/images/starIcon.png " alt="startIcon" width=15px>  </img> Most popular`;
+    MostPopular.innerHTML = `<img src="./images/starIcon.png " alt="startIcon" width=15px>  </img> Most popular`;
 
   }
 }
