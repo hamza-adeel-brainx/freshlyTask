@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Freshly</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.1/dist/jquery-steps.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/step-style.css">
+</head>
+<body>
+  <div class="step-app " id="pageSteps">
+    <ul class="step-steps pt-2 pl-3">
+        <div class="d-inline-flex nav-bar mx-auto">
+            <li class="header-list text-center active" data-step-target="plan-step">Plan <i class="ms-1 me-2 fa fa-angle-right" aria-hidden="true"></i></li>
+            <li class="header-list text-center" data-step-target="day-step">Day <i class="ms-1 me-2 fa fa-angle-right" aria-hidden="true"></i></li>
+            <li class="header-list text-center" data-step-target="meals-step">Meals <i class="ms-1 me-2 fa fa-angle-right" aria-hidden="true"></i></li>
+            <li class="header-list text-center" data-step-target="checkout-step">Checkout</li>
+        </div>
+    </ul>
+
+    <div class="step-content ">
+        <section class="section-plans my-lg-5 step-tab-panel active" id="plans" data-step="plan-step">
+            <div class="header">
+                <img src="./images/freshly-meal-page-image.svg" alt="freshly-logo">
+                <h1 class="py-3 text-center">Flexible plans that fit your life</h1>
+                <p>We offer anywhere from 4–12 meals per week, with meals as low as <span><b>$9.58 each. The bigger your box, the more you’ll save</b></span> —and you can always pause or change your plan at any time.
+                </p>
+            </div>
+            <div class="container">
+                    <div class="row ">
+                        <div class=" col-6 col-sm-6 col-md-3">
+                        <div class="step-footer">
+                            <div data-step-action="next" class="step-btn">
+                                    <div class="card plans"  data-id="4">
+                                        <div class="discount-tag">
+                                            Save upto 10$
+                                        </div>
+                                        <img src="./images/plan1.jpg" class="" alt="4 Meals">
+                                        <div class="card-body">
+                                            <p class="card-text text-center"><b>4 Meals</b></p>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        <div class=" col-6 col-sm-6 col-md-3 ">
+                        <div class="step-footer">
+                            <div data-step-action="next" class="step-btn">
+                            
+                                    <div class="card plans "  data-id="6">
+                                        <img src="./images/plan6.jpg" class="card-img-top img-fluid" alt="6 Meals">
+                                        <div class="card-body">
+                                            <p class="card-text text-center"><b> 6 Meals</b></p>
+                                        </div>
+                                    </div>
+                          
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-3">
+                        <div class="step-footer">
+                            <div data-step-action="next" class="step-btn">
+                               
+                                    <div class="card plans" data-id="10">
+                                        <img src="./images/plan10.jpg" class="card-img-top img-fluid" alt="10 Meals">
+                                        <div class="card-body">
+                                            <p class="card-text text-center"><b> 10 Meals</b></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-3">
+                        <div class="step-footer">
+                            <div data-step-action="next" class="step-btn">
+                              
+                            <div class="card plans" data-id="12">
+                                        <img src="./images/plan12.jpg" class="card-img-top img-fluid" alt="12 Meals">
+                                        <div class="card-body">
+                                            <p class="card-text text-center"><b> 12 Meals</b></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="text-center Shipping-text">
+                    Shipping and tax added to checkout
+                </p>
+                <button class="btn btn-large bg-primary get-started-btn">Get started</button>
+            </div>
+        </section>
+        <section class="section-delivery step-tab-panel" id="day" data-step="day-step">
+            <h1 class="text-center">Choose a Delivery Day</h1>  
+            <div class="Delivery-date d-flex justify-content-center align-items-center flex-column mb-5">
+                <ul class="date-list">
+            
+                </ul>
+                <div class="step-footer">
+                  <div data-step-action="next" class="step-btn">
+                    
+                <button class=" btn bg-primary btn-large ps-5 pe-5 btn-next-steps mb-5">Next steps</button>
+                </div>
+              </div>
+                <p class="first-delivery-date"> </p>
+            </div>
+            <hr>
+            <h1 class="text-center">Common Questions</h1>
+            <div class="accordion container " id="accordion-Questions">
+                <div class="accordion-item ">
+                  <h2 class="accordion-header " id="headingOne">
+                    <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How many servings are your meals?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-Questions">
+                  <div class="accordion-body question-bg-color">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Do you Accomodate dietary preferences?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-Questions">
+                  <div class="accordion-body question-bg-color">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How Long do the meals last?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-Questions">
+                  <div class="accordion-body question-bg-color">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingfour">
+                      <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                        How do I heat up my meals?
+                      </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-Questions">
+                    <div class="accordion-body question-bg-color">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingfive">
+                      <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                        How does shipping work?
+                      </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-Questions">
+                    <div class="accordion-body question-bg-color">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingsix">
+                      <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                        How does the shipping work?
+                      </button>
+                    </h2>
+                    <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordion-Questions">
+                      <div class="accordion-body question-bg-color">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </section>
+        <section class="meals-section step-tab-panel main-container" id="meals" data-step="meals-step">
+          <div class="container-fluid">
+         <div class="row add-meals-page">
+          <div class="col-12 col-md-12 col-lg-7 col-xl-8 col-xxl-9 ">
+            <div class="row temp">
+              <template>
+              <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 mb-4">
+                <div class="card mealsection-card " dataset-price="6">
+                  <img src="./images/Chicken Cordon Bleu.jpg" class="product-img img-fluid" alt="4 Meals">
+                  <div class="img-badge-parent">        
+                  
+                </div>
+                  <div class="card-body card-body-border">
+                      <h6  class="product-tile">Pork Chile Colorado</h6>
+                      <p class="flavour">
+                        with Masterful Mac & Cheese
+                      </p>
+                      <div class="d-flex justify-content-center justify-content-md-start justify-content-sm-start   align-items-center">
+                        <div class=" border-ingridients">
+                        Gluten 
+                        <span class="gluten"></span> 
+                      </div>
+                      <div class="padding-ingredients border-ingridients ">
+                        <span class="cals"></span>
+                        cals
+                      </div>
+                      <div class="padding-ingredients border-ingridients">
+                        <span class="carbs"></span> 
+                        carbs
+                      </div>
+                      <div class=" padding-ingredients d-none d-sm-block d-md-block d-lg-block d-xl-none d-xxl-none ">
+                        <span class="protein "></span>
+                        protein 
+                      </div>
+                      <div class=" text-center">
+                        <button class="btn bg-primary add-btn">+ Add</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </template>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 col-xl-4 col-xxl-3 ">
+            
+          <div class="total-cart">
+
+          <div class="cart">
+            <div class="d-flex pt-3">
+              <p  class="delivery-date-meal-page"> </p>
+              <a  class="clear-items ms-3"> Clear all</a>
+            </div>
+          <template>
+            <div class="cart-item d-flex align-items-center mt-3" dataset-price="">
+              <img class="cart-img p-2" src="" alt="food">
+              <p class=" cart-item-title m-0 ps-3"></p>
+                    <i class="fa fa-plus  add-item-btn" aria-hidden="true"></i>
+                    <i class="fa fa-minus  minus-item-btn" aria-hidden="true"></i>
+            </div>
+          </template>  
+        </div>
+          <div class="order-summary bg-white psotion-fixed position-sm-fixed position-md-absolute  position-xl-absolute position-xxl-absolute  ">
+            <div class="wrapper-padding">
+          <div class="d-flex justify-content-between align-items-start pe-3">
+            <h4>Order Summary</h4>
+            <i class=" fa fa-shopping-cart fa-bounce cart-icon pt-1 " style="color: #28522f;"></i>
+          </div>
+          
+          <div class=" container-fluid justify-content-between d-flex ">
+          <p class="no-of-meals"></p>
+          <p class="price"> </p>
+        </div>
+        <div class="container-fluid justify-content-between d-flex">
+          <p class=""> <b>Sub-Total</b></p>
+          <p class="sub-total-price"> </p>
+        </div>
+        <p class="container-fluid d-flex justify-content-center align-items-center m-0 p-0">Text and shipping added at checkout <hr class="line-cart"></p>
+        <p class="add-items-procees"> </p>
+        <div class="step-footer">
+          <div data-step-action="" class="step-btn step-btn-cart-customise">
+            <button class="btn bg-primary btn-large ps-5 pe-5 btn-cart-next-steps mb-5" disabled>Next steps</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+          </div>
+        </div>
+         </div>
+        </section>
+        <section class="checkout-section container-fluid step-tab-panel" id="checkout" data-step="checkout-step">
+          <div class=" container-fluid address-page">
+         <div class="container ">
+          <div class="row">
+            <div class="col-lg-6 order-lg-1 order-sm-2 order-2">
+              <h4 class="mt-5 mt-lg-0">Checkout</h4>
+              <form class="row g-3 p-0 m-0" id="myForm">
+                <h4>Delivery Address</h4>
+                <div class="col-md-6">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname">
+                </div>
+                <div class="col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname">
+                </div>
+                <div class="col-12">
+                    <label for="fullName" class="form-label">Full Name for Delivery
+                        Address</label>
+                    <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="col-12">
+                    <label for="address1" class="form-label">Address Line 1</label>
+                    <input type="text" class="form-control" id="address1">
+                </div>
+                <div class="col-12">
+                    <label for="address2" class="form-label">Address Line 2 (optional)</label>
+                    <input type="text" class="form-control" id="address2">
+                </div>
+                <div class="col-md-5">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="col-md-4">
+                    <label for="state" class="form-label">State</label>
+                    <select id="state" class="form-select">
+                        <option selected="">CA</option>
+                        <option>AR</option>
+                        <option>DC</option>
+                        <option>FL</option>
+                        <option>HI</option>
+                        <option>ID</option>
+                        <option>IL</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="zip-code" class="form-label">Zip</label> <a class="text-primary text-decoration-underline ps-1">change</a>
+                    <input type="text" class="form-control" id="zip-code">
+                </div>
+                <div class="col-12">
+                    <label for="phone-num" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone-num">
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label d-inline" for="gridCheck">
+                            Receive SMS text message updates on my orders
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email (We require your email to send
+                        you receipts and order updates)</label>
+                    <input type="email" class="form-control" id="email"><span class="text-danger" id="emailerrorMsg"></span>
+                    <hr>
+                </div>
+                <div class="col-12 w-100 pb-sm-4">
+                    <button class="btn bg-primary btn-cart-next-steps">Next</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-lg-4 order-lg-2 order-sm-1 order-1">
+              <h4 class="">Order Summary</h4>
+
+              <div class="row checkout-summary">
+                <div class="col-12">
+                  <div class="promo-container">
+                  <a class="promo-link" >+Add Promo Code</a>
+                  <template>
+                    <input type="text" id="promo">
+                    <button class="btn bg-primary promo-btn">Apply</button>
+                  </template>
+                </div>
+                  <hr>
+                  <div class="d-flex flex-column ">
+                  <label>Delivery Date</label>
+                  <div class="input-group">
+                    <select name="delivery-date-dropdown"  class="delivery-date-dropdown">
+                     <template> <option> Monday , May 29</option></template>
+                    </select>
+                  </div>
+                </div>
+                  <hr>
+                  <div class="d-flex justify-content-between ">
+                    <p>Meals</p>
+                    <p class="price-meals"></p>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between ">
+                    <p>Shipping</p>
+                    <p class="price-shipping"> <b>$6.99</b></p>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between ">
+                    <p>Tax</p>
+                    <p class="price-tax"> <b>$6.99</b></p>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between ">
+                    <p><b>Total</b></p>
+                    <p class="price-total"></p>
+                  </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+            <h4 class="mt-5">My Meals</h4>      
+            <div class="meal-checkout">
+              <template>
+                <div class="row checkout-item d-flex align-items-center mt-3" dataset-price="">
+                  <div class="col-1 p-0">
+                  <p class="quantity m-0 text-center">1</p>
+                </div>
+                <div class="col-3 p-0">
+                  <img class="checkout-img p-1 pt-3 pb-3 " src="./images/Chicken & Pumpkin Parmesan Risotto.jpg" alt="food">
+                </div>
+                <div class="col-8">
+                  <p class=" checkout-item-title m-0 p-0">pork</p>
+                </div>
+              </div>
+            </template>
+            <div class="meal-check-products">
+
+            </div>
+            </div>
+
+          </div>
+          </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <hr>
+              <h1 class="text-center">Common Questions</h1>
+              <div class="accordion  container" id="accordion-Questions">
+                  <div class="accordion-item ">
+                    <h2 class="accordion-header " id="headingOne">
+                      <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How many servings are your meals?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-Questions">
+                    <div class="accordion-body question-bg-color">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Do you Accomodate dietary preferences?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-Questions">
+                    <div class="accordion-body question-bg-color">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How Long do the meals last?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-Questions">
+                    <div class="accordion-body question-bg-color">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingfour">
+                        <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                          How do I heat up my meals?
+                        </button>
+                      </h2>
+                      <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-Questions">
+                      <div class="accordion-body question-bg-color">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingfive">
+                        <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                          How does shipping work?
+                        </button>
+                      </h2>
+                      <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-Questions">
+                      <div class="accordion-body question-bg-color">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingsix">
+                        <button class="accordion-button question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color question-bg-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                          How does the shipping work?
+                        </button>
+                      </h2>
+                      <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordion-Questions">
+                        <div class="accordion-body question-bg-color">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+         </div>
+        </div>
+        </section>
+    </div>
+
+</div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.1/dist/jquery-steps.min.js"></script>
+      <script src="./scripts/step.js"></script>
+      <script src="./scripts/index.js"></script>
+
+</body>
+</html>

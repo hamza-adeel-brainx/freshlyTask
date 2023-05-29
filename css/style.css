@@ -1,0 +1,454 @@
+:root {
+  --main-headings: #000000;
+  --green: #357471;
+  --yellow: #fce94e;
+  --blue: #3176fd;
+  --dark-blue: #2760d3;
+  --white: #ffffff;
+  --offwhite: #fffdf7;
+  --grey: #dee2e6;
+  --dark-grey: #717171;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  padding: 0;
+}
+
+/* section 1 */
+/* header Icons */
+
+li.header-list.text-center.active {
+  color: blue;
+  opacity: 1;
+  pointer-events: all;
+}
+
+li.header-list.text-center {
+  pointer-events: none;
+  opacity: 0.5;
+}
+ 
+.step-app ul {
+  list-style-type: none !important;
+}
+.step-app li {
+  cursor: pointer;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  /* header paragrapgh style */
+.header p {
+  text-align: center;
+  max-width: 700px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--main-headings);
+  font-weight: 400;
+}
+ 
+/* plans  */
+
+.plans p {
+  color: var(--green);
+}
+.plans {
+  border: none;
+}
+
+/* DicountTag in first plan */
+
+.discount-tag {
+  background-color: var(--yellow);
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 30px;
+}
+/* get started btn style */
+.get-started-btn {
+  color: white;
+  border-radius: 0px;
+}
+.get-started-btn:hover {
+  color: white !important;
+  background-color: var(--dark-blue) !important;
+}
+
+
+.Shipping-text {
+  margin-top: 50px;
+  color: var(--green);
+}
+
+
+/*  Section 2  */
+
+/* accordian adjustment */
+.accordion-item {
+  border: none;
+}
+
+.accordion-item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.accordion-button::after {
+  background-image: url(./images/download.svg);
+}
+/* date list style  */
+.date-list {
+  height: 278px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-width: 400px;
+}
+/* date list list item style */
+.list-item {
+  background-color: var(--white);
+  border: 1px solid black;
+  padding: 10px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.list-item.active {
+  border-left: 8px solid var(--blue);
+  background-color: var(--offwhite);
+}
+.list-item:hover {
+  transform: translateX(20px);
+}
+/* most popular tag */
+.most-popular {
+  color: var(--green);
+  position: absolute;
+  right: 10px;
+  top: 8.1px;
+}
+/* section dates background color */
+.section-delivery {
+  background-color: var(--offwhite);
+}
+/* questions part background color */
+.question-bg-color {
+  background-color: var(--offwhite);
+}
+
+/* next button styles*/
+.btn-next-steps {
+  min-width: 400px;
+  color: var(--white);
+}
+
+.btn-next-steps:hover {
+  color: white !important;
+  background-color: var(--dark-blue) !important;
+}
+
+/* section 3 */
+
+.meals-section {
+  background-color: var(--offwhite);
+}
+.mealsection-card {
+  border: none;
+}
+.delivery-date-meal-page .main-container {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  padding: 10px;
+}
+.card-body-border {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-top: none;
+}
+/* add btn on the meals card hover styles  */
+.add-btn {
+  color: var(--white);
+  min-width: 71px;
+  margin-left: 9px;
+}
+.add-btn:hover {
+  color: white !important;
+  background-color: var(--dark-blue) !important;
+}
+
+/* product ingredients styles  */
+.border-ingridients {
+  border-right: 1px solid rgba(0, 0, 0, 0.175);
+}
+.padding-ingredients {
+  padding-left: 6px !important;
+}
+
+/* premium card styles  */
+.premium-color {
+  color: var(--white);
+  background-color: var(--main-headings);
+}
+
+.primium-card .border-ingridients {
+  border-right: 1px solid var(--white) !important;
+}
+
+/* the premium product badge styles*/
+.price-badge {
+  background-color: rgb(210 161 61);
+  position: absolute;
+  min-width: 46px;
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 1;
+  bottom: -16px;
+}
+/* the badge wrapper div */
+.img-badge-parent {
+  position: relative;
+}
+/* the item as a single added in cart styles  */
+.cart-item {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  position: relative;
+}
+/* the image in the cart */
+.cart-img {
+  max-width: 122px;
+}
+/* the plus btn of item in cart */
+.add-item-btn {
+  top: 12px;
+  position: absolute;
+  right: 45px;
+  width: 20px;
+}
+/* the minus btn of item in cart */
+.minus-item-btn {
+  top: 53px;
+  position: absolute;
+  right: 45px;
+  width: 20px;
+}
+/* the section 3 cart height  */
+.cart {
+  overflow-y: auto;
+  height: calc(100% - 45px);
+}
+/* section 3 next btn styles  */
+.btn-cart-next-steps {
+  width: 100%;
+  color: var(--white);
+}
+.btn-cart-next-steps:hover {
+  color: white !important;
+  background-color: var(--dark-blue) !important;
+}
+
+/* the order summary styles  */
+
+.order-summary {
+  position: absolute;
+  width: 100%;
+  padding: 23px 15px 0;
+  border-radius: 40px 40px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-bottom: none;
+  bottom: 0;
+  box-shadow: 0 2px 20px 12px rgba(0, 0, 0, 0.1),
+    0 8px 16px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon{
+  color: #28522f;
+  padding: 6px 22px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: -11px;
+}
+
+.order-summary-display {
+  display: block;
+}
+
+/* the total cart container having cart and order summary container  */
+.total-cart {
+  position: relative;
+  height: calc(100vh - 45px);
+}
+
+/* row on section 3 in which meals are displaying style to slide  */
+.temp {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+/* the section 3 btn style when disabled  */
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  color: var(--white);
+}
+
+/* cart icon styles */
+i.fa.fa-shopping-cart.cart-icon.pt-1 {
+  padding: 6px 22px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: -11px;
+}
+
+/* section 4 */
+/* total page background color and borer adjustment */
+.address-page {
+  padding: 20px;
+  background-color: var(--offwhite);
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+/* form styles */
+#myForm {
+  margin-top: 50px !important;
+  background-color: var(--white);
+  font-weight: 600;
+  padding: 20px 40px 20px 40px !important;
+}
+
+/* the order summary box on the checkout page styles  */
+.checkout-summary {
+  margin-top: 50px !important;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  padding-top: 20px;
+}
+/* promo styles  */
+.promo-link {
+  cursor: pointer;
+}
+
+.promo-link-d {
+  display: none;
+}
+.promo-btn {
+  color: var(--white);
+}
+/* delivery dates drop down styles */
+.delivery-date-dropdown {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 10px !important;
+}
+
+/* items dusplaying on checkout styles */
+.checkout-item {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.checkout-img {
+  max-width: inherit;
+}
+
+/* media queries  */
+@media screen and (max-width: 576px) {
+  .btn-next-steps {
+    min-width: 100% !important;
+  }
+  .date-list {
+    min-width: 100% !important;
+  }
+  .step-btn {
+    width: 100% !important;
+  }
+  .step-footer {
+    width: 100% !important;
+  }
+  .mealsection-card {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .product-img {
+    max-width: 34%;
+    object-fit: cover;
+  }
+
+}
+@media screen and (max-width: 768px) {
+.cart{
+  position: absolute;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    transform: translateY(calc(-100% - 407px));
+    z-index: 99;
+    padding: 0 0 40px 0px;
+    
+}
+.add-meals-page{
+  position: relative;
+}
+.order-summary {
+  position: fixed;
+  left:0px;
+}
+}
+@media screen and (max-width: 991px) {
+  .add-meals-page{
+    position: relative;
+  }
+  
+.cart{
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  transform: translateY(calc(-100% - 407px));
+  z-index: 99;
+  padding: 0 0 40px 0px;
+}
+.order-summary {
+  position: fixed;
+  left:0px;
+}
+}
+@media screen and (max-width:991px) {
+  .total-cart{
+    height: fit-content;
+  }
+  .cart{
+    height: 271px !important;
+    transform: translateY(calc(-100% + 407px));
+    height:0;
+    z-index: 2;
+    transition: all ease-in 0.4s;
+  }
+  .temp{
+    padding-bottom: 300px;
+  }
+  .order-summary{
+    z-index: 3;
+  }
+  .cart.open-drawer {
+    
+      transform: translate(-30px , calc(-100% - 305px));
+      display: block;
+      padding: 20px;
+      width: 100vw;
+  
+}
+}
