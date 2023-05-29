@@ -109,8 +109,7 @@
       "carbs": "35g",
       "protein": "46g",
       "special": "true"
-    }
-    ,
+    },
     {
       "title": "Super-Grain Pulled Pork Bowl",
       "Image": "/images/Super-Grain Pulled Pork Bowl.jpg",
@@ -121,8 +120,7 @@
       "carbs": "35g",
       "protein": "46g",
       "special": "true"
-    }
-    ,
+    },
     {
       "title": "Supper Club Top Blade Steak",
       "Image": "/images/Supper Club Top Blade Steak.jpg",
@@ -133,8 +131,7 @@
       "carbs": "35g",
       "protein": "46g",
       "special": "false"
-    }
-    ,
+    },
     {
       "title": "Cauliflower Shell Beef Bolognese",
       "Image": "/images/Cauliflower Shell Beef Bolognese.jpg",
@@ -146,6 +143,5 @@
       "protein": "46g",
       "special": "false"
     }
- 
   ]
 }
