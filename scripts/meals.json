@@ -2,7 +2,7 @@
   "meals": [
     {
       "title": "Pork Chile Colorado",
-      "Image": "http://127.0.0.1:5500./images/Pork%20Chile%20Colorado.jpg",
+      "Image": "./images/Pork Chile Colorado.jpg",
       "Price": "2",
       "flavour": "with Masterful Mac & Cheese",
       "gluten": "Free",
